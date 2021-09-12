@@ -78,6 +78,7 @@ Pipeline call via Rest API - screenshot subsequently done in Jupyter Labs
 ![Pipeline call via Rest API](https://github.com/dwittaker/nd00333_AZMLND_C2/blob/main/POML_files/Images/Img_POML_42.png)
 
 Dataset with AutoML
+
 ![Dataset with AutoML](https://github.com/dwittaker/nd00333_AZMLND_C2/blob/main/POML_files/Images/Img_POML_41.png)
 
 Pipeline Run via the SDK
