@@ -119,7 +119,7 @@ By clicking the url on the page, we are redirected to the application insights s
 
 ---
 
-## Swagger API Review
+### Swagger API Review
 
 Azure provides a Swagger JSon file for the purpose of documenting the endpoint's API use. This is critical for developers seeking to use the service as they will need to understand its functionality and its requirements.
 
@@ -156,7 +156,7 @@ The following screenshot shows a sample response and field type from the endpoin
 
 ---
 
-## Benchmarking the Endpoint's performance
+### Benchmarking the Endpoint's performance
 
 To ensure appropriate expectations, we must create a benchmark for the endpoint. This can be performed using the Apache Bench tool.
 
@@ -183,7 +183,7 @@ The tool's measurements were comparable with Azure's App Insights, seen below.
 
 ---
 
-## Pipeline Run via the SDK
+### Pipeline Run via the SDK
 
 The provided code was modified to perform the required functions on the bank marketing training dataset. 
 
@@ -198,7 +198,7 @@ The following screenshots show where the pipeline experiment was subsequently su
 
 ---
 
-## Pipeline Runs
+### Pipeline Runs
 
 After submission of the pipeline run, we can either monitor from the notebook or inside the portal. This next screenshot shows the portal while the model is still training.
 
@@ -214,7 +214,7 @@ The above pipeline (lucid...) is shown here.
 
 --- 
 
-## Publish and Run incl REST API run
+### Publish and Run incl REST API run
 
 Once the pipeline is complete, we can download and review any metrics along with the best model. 
 
@@ -233,7 +233,7 @@ Pipeline endpoints can also be explored in ML Studio via an overview page which 
 
 ---  
 
-## Pipeline call via REST API
+### Pipeline call via REST API
 
 This screenshot was subsequently done in Jupyter Labs. It shows where the Pipeline is being invoked by its Rest API. This essentially instructs it to process any new data and perform training.
 
@@ -246,7 +246,7 @@ The following images show the run via the REST Api as well as the object in ML S
 
 ---
 
-## Dataset with AutoML
+### Dataset with AutoML
 
 The image below shows the dataset that was used with the automl module.
 
