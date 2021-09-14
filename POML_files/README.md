@@ -1,3 +1,23 @@
+# Table of Contents
+- [Overview](#overview)
+- [Screencast](#screencast)
+- [Architectural Diagram](#architectural-diagram)
+- [Improving the Project](#improving-the-project-in-the-future)
+- [Screenshots](#screenshots)
+    - [The Dataset](#the-registered-dataset)
+    - [The Experiment and Best Model](#the-experiment-and-best-model)
+    - [The Deployed Model and Results](#deployed-model-and-result-from-2-inputs)
+    - [Reviewing Logs and Enabling AppInsights](#reviewing-logs-and-enabling-appinsights)
+    - [Swagger for API](#swagger-api-review)
+    - [Benchmarking Performance](#benchmarking-the-endpoints-performance)
+    - [Pipeline runs via the SDK](#pipeline-run-via-the-sdk)
+    - [Pipeline runs](#pipeline-runs)
+    - [Publishing and running Pipelines](#publish-and-run-incl-rest-api-run)
+    - [Pipeline calls via REST API](#pipeline-call-via-rest-api)
+    - [The Dataset used for AutoML](#dataset-with-automl)
+
+---
+
 # Overview
 
 In this project I utilize Azure's Machine Learning Tools for the classification of a bank marketing dataset. In that dataset, there are several features (demographic, financial etc) about persons who acquired a specific service from the bank(s). Using the data, we would like to be able to predict situations in which persons would or would not acquire that service.
