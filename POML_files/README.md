@@ -22,6 +22,14 @@
 
 In this project I utilize Azure's Machine Learning Tools for the classification of a bank marketing dataset. In that dataset, there are several features (demographic, financial etc) about persons who acquired a specific service from the bank(s). Using the data, we would like to be able to predict situations in which persons would or would not acquire that service.
 
+In order to achieve this goal, I used Azure ML's AutoML module. With only minimal configuration inputs, the AutoML module performed several experiments using different machine learning algorithms, while ranking their ability to accurately classify the data. Once complete, AutoML indicated the best model which turned out to be an ensemble of XGBoost Classifiers.
+
+This model was then deployed as a secure Azure web service (and endpoint using an Azure Container Instance) that can be consumed (in real-time or batch) using simple REST API calls (GET/POST). Following successful testing, benchmarking and log/insights review, I moved to operationalize the model. 
+
+As part of the MLOps lifecycle, we generally implement periodic re-training, inclusive of previously unseen data, using pipelines. Along with other benefits, this practice ensures the production model is trained for potential changes in the data's patterns (aka dataset shift) due to seasonality, feature changes and other factors. 
+
+The above-mentioned AutoML training experiment was orchestrated via a pipeline that contained, in this case, a single (AutoML) step. That pipeline was then published as a REST endpoint that allows us to easily re-trigger the training workflow using a simple web service call.
+
 # Screencast
 The screencast video can be viewed on YouTube by clicking the image below.
 
